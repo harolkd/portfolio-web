@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Portfolio</title>
+        <!--archivos css y toda la wea-->
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" media="(max-width: 600px)" href="css/mobile.css"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <!--scripts cargados en la página-->
+        <script src="https://kit.fontawesome.com/54e859afb9.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <!--script de animación-->
+        <script src="js/scrollreveal.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#1">Inicio</a></li>
+                    <li><a href="#2">Mi trabajo</a></li>
+                    <li><a href="#3">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--pagina principal, la que tiene mi nombre y eso-->
+        <i id="1"></i>
+        <article>
+            <section class="home">
+                <img alt="harold" src="https://avatars.githubusercontent.com/u/85809507?v=4">
+                <article id="home-info">
+                    <h1>Hola mundo, soy <span>Harold Vera.</span></h1>
+                    <p>Soy un programador jr de 16 años, bilingue, trabajo en frondend y backend, mis hobbies son los videojuegos y el modding.<br> Y para finalizar, siempre estoy dispuesto a ayudar</p>
+                    <a href="#2"><button class="button">Leer más</button></a>
+                </article>
+            </section>
+            <!--separador-->
+            <hr color="#0A0A0A" id="2"/>
+             <!--el about que tiene mis proyectos en cajas y eso-->
+            <section class="about">
+                <h1>Mi trabajo</h1>
+                <p>En este apartado encontrarás trabajos hechos por mi, todos desarrollados en GNU/Linux, también puedes encontrarlos en mi cuenta de <a href="https://github.com/bonzer75" target="_blank">github</a>.</p>
+                <section id="about-flex">
+                    <article class="card" style="background-image: url('./img/1.png')" id="card1">
+                        <h3>Ruta 1 MisionTIC2022</h3>
+                        <p>Used: <i class="fab fa-python"></i>, <i class="fab fa-html5"></i>, <i class="fab fa-css3-alt"></i></p>
+                    </article>
+                    <article class="card" style="background-image: url('./img/2.png')" id="card2">
+                        <h3>Ash NodeJS Bot</h3>
+                        <p>Used: <i class="fab fa-js"></i>, <i class="fab fa-node-js"></i></p>
+                    </article>
+                    <article class="card" style="background-image: url('./img/3.png')" id="card3">
+                        <h3>Password Manager</h3>
+                        <p>Used: <i class="fab fa-python"></i></p>
+                    </article>
+                </section>
+            </section>
+            <!--otro separador-->
+            <hr color="#0A0A0A" id="3"/>
+             <!--la información de contacto, da paja hacer un formulario-->
+            <section class="contacto">
+                <h1>Contacto</h1>
+                <p>Aquí te dejo un formulario para que me puedas contactar y dejar un mensaje.</p>
+                <form action="" id="formulario" name="formulario">
+                    <article id="form-data">
+                        <label for="name">Nombres</label>
+                        <input type="text" name="name" id="name" size="50" required>
+
+                        <label for="last">Apellidos</label>
+                        <input type="text" name="last" id="last" required>
+
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" required>
+                    </article>
+                    <article id="msg">
+                        <label for="msg">Mensaje</label>
+                        <textarea name="msg" rows="9" cols="55" required></textarea>
+
+                        <button class="button" id="bt2" type="submit">Enviar</button>
+                    </article>
+                </form>
+                <!--Mis hermosas y sensuales redes sociales-->
+                <br/>
+                <p>Por último, puedes seguirme en mis redes sociales, allí encontrarás información sobre mis proyectos y sabrás en qué estoy trabajando actualmente.</p>
+                <ul>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://github.com/bonzer75" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </section>
+        </article>
+        <footer>
+            <p>© Copyright 2021, Harold Vera</p>
+        </footer>
+        <!--scripts que usa la página-->
+        <script src="js/main.js"></script>
+        <script src="js/sweetalert.js"></script>
+        <script src="js/smoothscroll.js"></script>
+    </body>
+</html>

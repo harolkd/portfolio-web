@@ -1,0 +1,35 @@
+@media screen and (max-width: 600px) {
+
+    .home {
+        grid-template-columns: repeat(1, 1fr);
+        float: center;
+        height: auto;
+        margin: 20px 0px 50px 0px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .home img {
+        margin: 150px auto 30px auto;
+    }
+
+    .home p{
+        text-align: center;
+    }
+
+    nav ul li {
+        font-size: 25px;
+        font-weight: 0;
+      }
+
+    #home-info {
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .about {
+        height: 50em;
+    }
+  }

@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/*Propeidades generales para toda la página*/
+* {
+  color:white;
+  padding: 0px;
+  margin: 0 auto;
+  font-family: "Roboto", "Arial";
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#261C30;
+}
+
+hr {
+  color: #0A0A0A;
+}
+
+section {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  width: 100% !important;
+  height: auto;
+  padding: 20px;
+}
+
+/*La bonita barra de scroll*/
+body::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.4);
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: rgb(124, 124, 124);
+  border-radius: 10px;
+}
+
+/*BARRA NAV*/
+nav {
+  background-color: #0A0A0A;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  height: auto;
+}
+
+nav ul li {
+  font-size: 20px;
+  float: left;
+  list-style: none;
+  margin-top: 15px;
+  padding: 0px 16px 15px 15px;
+  font-weight: 600;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  color:white;
+}
+
+nav ul li a:hover {
+  text-shadow: 0px 0px 10px #33dbff, 0px 0px 10px #33dbff;
+  -webkit-text-stroke: 1px rgba(51, 219, 255, 0.2);
+  stroke-width: 1px;
+  transition: 200ms ease-in-out;
+}
+
+nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+/*MENU PRINCIPAL, INICIO, HOME, COMO QUIERAN*/
+.home {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  align-items: center;
+  margin: 200px 0px 0px 0px;
+}
+
+.home span {
+  color: #33ff9c;
+  text-decoration: underline;
+}
+
+.home img {
+  width: 50%;
+  margin: 0% 0% 0px 15%;
+  border-radius: 50%;
+}
+
+#home-info {
+  font-size: 30px;
+  width: 100%;
+  float: left;
+  margin-left: -20%;
+}
+
+.home h1 {
+  font-size: 1.5em;
+  margin-bottom: 35px;
+}
+
+/*botón bonito que muy probablemente reutilice*/
+.button {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin: 35px 0px 0px 0px;
+  font-size: 30px;
+  background: #5a595e;
+  text-shadow: 0 1px 1px black;
+  box-shadow: 1px 3px 11px -5px rgb(17, 17, 17, .60);
+}
+
+.home button {
+  margin-bottom: 75px;;
+}
+
+.button:hover {
+  background-color:#33ff9c;
+  box-shadow: 0 0 9px #33ff9c, 0 0 15px #33ff9c, 0 0 30px #33ff9c;
+  color: black;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+/*PROYECTOS MIOS YA SABEN EL FLEX Y ESO*/
+.about {
+  background-color: #22192B;
+  font-size: 30px;
+}
+
+.about h1{
+  font-size: 1.5em;
+  text-align: center;
+  margin: 100px 0px 35px 0px;
+}
+
+.about p {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.about p a{
+  font-weight: 600;
+  color: #33ff9c;
+}
+
+#about-flex {
+  display: flex;
+  flex-flow: wrap row;
+  gap: 50px;
+  padding: 40px 0;
+  justify-content: center;
+}
+
+/*DEL ABOUT LAS CARTAS ESTAS QUE SALEN*/
+.card {
+  border-radius: 10px;
+	height: 240px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+  width: 300px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover{
+  transform: translateY(-15px);
+  transition: 250ms ease-in-out;
+}
+
+.card h3 {
+  font-size: 25px;
+	padding: 20px 0;
+  flex-direction: column;
+}
+
+.card h3 {
+  height: 100%;
+  display: flex;
+  margin-bottom: -40px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card p {
+  float: left;
+}
+
+/*INFORMACIÓN DE CONTACTO*/
+.contacto {
+  text-align: center;
+  background-color: #1E1626;
+  font-size: 30px;
+}
+
+.contacto h1 {
+  font-size: 1.5em;
+  margin: 100px 0px 35px;
+}
+
+.contacto p span {
+  color: #33ff9c;
+  text-decoration: underline;
+}
+
+.contacto ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2.5em;
+}
+
+.contacto ul li {
+  font-size: 50%;
+  list-style: none;
+  margin-top: 15px;
+  padding: 0px 16px 15px 15px;
+  margin: 30px 0px 0px 0px;
+}
+
+.contacto ul li a {
+  text-decoration: none;
+  display: block;
+  color:white;
+  margin-bottom: 30px;
+}
+
+.contacto ul li a i:hover {
+  color:#33dbff;
+  text-shadow: 0 0 3px #33dbff, 0 0 5px #33dbff, 0 0 10px #33dbff;
+  transition: 200ms ease-in-out;
+}
+
+/*FORMULARIO*/
+
+form {
+  display: flex;
+  font-size: 25px;
+  width: auto;
+  flex-flow: row wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#msg {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#msg textarea {
+  border-radius: 5px;
+  background-color: #0A0A0A;
+  font-size: 20px;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#msg label {
+  padding-bottom: 20px;
+}
+
+#form-data {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+#form-data label {
+  padding: 5px;
+}
+
+#form-data input {
+  height: 35px;
+  background-color: #0A0A0A;
+  padding: 25px 15px;
+  font-size: 20px;
+  width: 92%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 5px;
+  border: none;
+}
+
+/*#msg {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+
+#msg > textarea {
+  flex: 1;
+  min-width: 35em;
+}
+
+#msg 
+
+
+
+#form-data {
+  flex: 1;
+  order: 1;
+}
+
+#form-data label {
+  padding: 50px;
+}
+
+#form-data input {
+  height: 35px;
+  background-color: #0A0A0A;
+  padding: 25px;
+  font-size: 20px;
+  width: 92%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 5px;
+  border: none;
+}*/
+
+#bt2 {
+  margin: 0px auto;
+  padding: 15px 30px;
+  font-size: 25px;
+  width: 200px;
+}
+
+/*Footer cutre que hice en 1 dia*/
+footer {
+  height: auto;
+  background: #0A0A0A;
+}
+
+footer p {
+  padding: 25px 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+/*Alertas*/
+
+#text_alert a {
+  color: #D40025;
+}
+
+#text_alert {
+  color: black;
+}
