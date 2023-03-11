@@ -1,4 +1,4 @@
-# Harold Vera Portfolio
+# Harold Portfolio
 ## _Currently archived_
 
 This is my first portfolio web written in pure html, css and js.
